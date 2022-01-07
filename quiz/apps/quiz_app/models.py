@@ -18,6 +18,9 @@ class Quiz(models.Model):
     def __str__(self) -> str:
         return self.quiz_name + " " + str(self.created_user)
 
+    class Meta:
+        verbose_name = "Quiz"
+        verbose_name_plural = "Quizes"
 
 
 class Question(models.Model):
